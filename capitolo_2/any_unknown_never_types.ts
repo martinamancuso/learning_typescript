@@ -14,9 +14,9 @@ currency = "Baht";
 // previous: `if (typeof value === "number") (...)`
 
 function countryNameLength(value: unknown) {
-    if (typeof value === "string") {
-        console.log(value.length);
-    }
+  if (typeof value === "string") {
+    console.log(value.length);
+  }
 }
 
 countryNameLength("United States of America");
@@ -26,7 +26,7 @@ countryNameLength("United States of America");
 // previous: `function throwCountryError(message: never): never (...)`
 
 function throwCountryError(message: string): never {
-    throw new Error(`Could not find country: ${message}`);
+  throw new Error(`Could not find country: ${message}`);
 }
 
 throwCountryError("Narnia");

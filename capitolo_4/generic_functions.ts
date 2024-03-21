@@ -7,7 +7,7 @@ START: Follow the instructions below.
 // Hint: The type for the `value` function parameter should use a type variable.
 
 function identity<T>(value: T): T {
-    return value;
+  return value;
 }
 
 let value1 = identity<string>("France");
@@ -17,14 +17,14 @@ let value2 = identity<number>(67_413_000);
 // ----
 
 async function fetchData<Type>(url: string): Promise<Type> {
-    const response = await fetch(url);
-    const responseBody = await response.json();
+  const response = await fetch(url);
+  const responseBody = await response.json();
 
-    return responseBody as Type;
+  return responseBody as Type;
 }
 
 interface User {
-    name: string;
+  name: string;
 }
 
 // Pass the `User` type as a type argument to the generic `fetchData()` function.

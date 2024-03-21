@@ -10,8 +10,8 @@ interface CountryPopulation {
 }
 
 const countryPopulation: CountryPopulation = {
-    code: "NZ",
-    population: 5_135_300,
+  code: "NZ",
+  population: 5_135_300,
 };
 
 // Define a `Country` interface that describes the object in this variable.
@@ -24,9 +24,9 @@ interface Country {
 }
 
 const countryData: Country = {
-    name: "India",
-    code: "IN",
-    population: 1_352_642_280,
+  name: "India",
+  code: "IN",
+  population: 1_352_642_280,
 };
 
 // Define a `Currency` type alias that describes the object in this variable.
@@ -36,12 +36,12 @@ type Currency = {
   name: string;
   code: string;
   symbol: string;
-}
+};
 
 const currencyData: Currency = {
-    name: "Euro",
-    code: "EUR",
-    symbol: "€",
+  name: "Euro",
+  code: "EUR",
+  symbol: "€",
 };
 
 // ----
